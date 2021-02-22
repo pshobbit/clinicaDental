@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+    <!-- Scripts -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./boostrap/checkout/form-validation.js"></script>
+
+
+    <!-- Favicon -->
+    <link href="./assets/img/tooth2.png" rel="icon">
+    <title>Clinica Dental Idhún</title>
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 16px;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+  
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg  fixed-top" id="mainNav" style="background-color: #007474;">
+    <div class="container-fluid">
+      <a class="navbar-brand js-scroll-trigger" href="home.html">
+        <h2></h2>
+       <img src="./assets/img/tooth2.png" width="50px" height="50px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quienesSomos.html">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="novedades-Ofertas.html">Novedades-Ofertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gestiones.html">Consultas</a>
+          </li>
+          <li class="nav-item dropdown  main-menu">
+            <a class="nav-link dropdown-toggle" href="#" >Especialidades</a>
+            <div class="dropdown-menu main-menubox" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="1.odontología.html">Odontología</a>
+              <a class="dropdown-item" href="2.estética.html">Estética</a>
+              <a class="dropdown-item" href="3.ortodoncia.html">Ortodoncia</a>
+              <a class="dropdown-item" href="4.cirugía.html">Cirugía</a>
+              <a class="dropdown-item" href="5.odontopediatría.html">Odontopediatría</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+<main class="container">
+  <div class="row g-3">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge bg-secondary rounded-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Product name</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Second product</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0">Third item</h6>
+            <small class="text-muted">Brief description</small>
+          </div>
+          <span class="text-muted">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Promo code</h6>
+            <small>EXAMPLECODE</small>
+          </div>
+          <span class="text-success">−$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$20</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <button type="submit" class="btn btn-secondary">Redeem</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Date de Alta</h4>
+      <form class="needs-validation" novalidate style="background-color: white;">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Nombre necesario.
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Apellidos necesarios.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="username" class="form-label">Nombre de usuario</label>
+            <div class="input-group">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="username" placeholder="nombre" required>
+            <div class="invalid-feedback">
+                Nombre-Usuario.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com">
+            <div class="invalid-feedback">
+              Por favor, valida tu email.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="address" placeholder="C\ ... Nº ... CP... " required>
+            <div class="invalid-feedback">
+              Por favor, indita tu dirección.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address2" class="form-label">Tipo<span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartamento, casa...">
+          </div>
+
+          <div class="col-md-5">
+            <label for="country" class="form-label">País</label>
+            <select class="form-select" id="country" required>
+              <option value="">Elige...</option>
+              <option>España</option>
+              <option>Francia</option>
+              <option>Portugal</option>
+              <option>Italia</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecciona un País.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">Comunidad Autónoma</label>
+            <select class="form-select" id="state" required>
+              <option value="">Elige...</option>
+              <option>Andalucía</option>
+              <option>Barcelona</option>
+              <option>Madrid</option>
+              <option>Galicia</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecciona una Comunicad autónoma.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <h4 class="mb-3">Forma de Pago</h4>
+
+        <div class="my-4">
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+          </div>
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="debit">Tarjeta de Debito</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Titular de Tarjeta</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Nombre del titular</small>
+            <div class="invalid-feedback">
+              Nombre de tarjeta necesario.
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Número de la tarjeta</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Por favor, introduzca los números de la tarjeta
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Caducidad</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Introduzca la fecha de caducidad de la tarjeta.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <a class="boton_personalizado soyunboton" href="./usuario.html" role="button" style="margin-left: 20%;">¡Finalizar compra!</a>
+
+      </form>
+    </div>
+  </div>
+</main>
+
+
+
+<!-- FOOTER -->
+</body>
+<footer class="text-center text-lg-start">
+<!-- Grid container -->
+  <div class="container p-4">
+<!--Grid row-->
+    <div class="row">
+<!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25595.628024177146!2d-6.1404949264548865!3d36.687638782426305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dc6e84844a39f%3A0x6dac3ef5f3d0ffea!2sJerez%20de%20la%20Frontera%2C%20C%C3%A1diz!5e0!3m2!1ses!2ses!4v1612350591006!5m2!1ses!2ses" width="400" height="400" frameborder="0" style="border:2px solid #005b5b;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+<!--Grid column-->
+      
+<!--Grid column-->
+            <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="font-weight: bold; font-style: italic;">NUESTROS HORARIOS</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <p>Lunes: 9:00 a 14:00 y de 15:00 a 22:00</p>
+                </li>
+                <li>
+                  <p>Martes: 9:00 a 14:00 y de 15:00 a 22:00</p>
+                </li>
+                <li>
+                  <p>Miércoles: 9:00 a 14:00 y de 15:00 a 22:00</p>
+                </li>
+                <li>
+                  <p>Jueves: 9:00 a 14:00 y de 15:00 a 22:00</p>
+                </li>
+                <li>
+                  <p>Viernes: 9:00 a 16:00</p>
+                </li>
+              </ul>
+            </div>
+<!--Grid column-->
+            <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
+              <h5 class="text-uppercase" style="font-weight: bold; font-style: italic;"><i class="bi bi-rss-fill"></i> NUESTRAS REDES SOCIALES</h5>
+
+            <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://twitter.com/!" style="color: rgb(11, 114, 114);"><i class="bi bi-twitter"></i> Twitter</a>
+            </li>
+            <li>
+             <a href="https://www.facebook.com/!" style="color: blue;"><i class="bi bi-facebook"> Facebook</i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/!" style="color: blueviolet;"><i class="bi bi-instagram"> Instagram</i></a>
+            </li>
+            <li>
+              <a href="#!" style="color: green;"><i class="bi bi-whatsapp"> WhatsApp</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+<!--Grid row-->
+    </div>
+<!-- Grid container -->
+  
+<!-- Copyright -->
+  <div class="text-center p-1" style="background-color: #007474;">
+    <p class="text-copy"> © 2021 Copyright: Ismael Domínguez y Pedro Suárez</p>
+  </div>
+</footer>
+</html>
