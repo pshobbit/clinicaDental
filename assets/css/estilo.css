@@ -83,21 +83,7 @@ a:hover{
   left: 100%;
 }
 
-@media (max-width: 992px) {
-  .dropdown-menu{
-      width: 50%;
-  }
-  .dropdown-menu .dropdown-submenu{
-      width: auto;
-  }
-  .redondeles
-  {
-    
-  }
-  .dropdown-menu{ 
-    left: -131%;
-  }
-}
+
 
 .dropdown-submenu a::after {
   right: 16px;
@@ -171,6 +157,12 @@ ul .dropdown-item:hover
     display: flex;
     justify-content: center;
 }
+.soyunboton2
+{
+    margin-top: 25px;
+    justify-content: center;
+}
+
 /* --------------------------------- */
 
 .lead{
@@ -217,13 +209,19 @@ ul .dropdown-item:hover
 footer {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
+  
 }
 
 .text-copy
 {
-  color: white;
+  color: rgb(209, 198, 198);
   font-weight: bold;
   margin-top: 10px;
+}
+
+.mapa
+{
+  border:2px solid #005b5b;
 }
 /* --------------------------------- */
 
@@ -238,7 +236,6 @@ footer {
   font-weight: 250;
   color: #2b9191;
 }
-/* --------------------------------- */
 
 /*--------------------DIFERENTES PÁGINAS--------------------*/
 /*PÁGINA NOVEDADES Y OFERTAS*/
@@ -432,34 +429,6 @@ textarea {
   height: 5em;
 }
 
-/*__________________________________________________________*/
-
- /* Diseño receptivo: cuando la pantalla tiene menos de 800 px de ancho, 
-  haga las dos columnas apilar uno encima del otro en lugar de uno al lado del otro */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
-    }
-  }
-  
-  /* Diseño receptivo: cuando la pantalla tiene menos de 400 px de ancho, realice
-   la navegación los enlaces se apilan uno encima del otro en lugar de uno al lado del otro */
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
-  }
-
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 16px;
-  }
-}
-
-
 /*----------------------------------------------------------------------------*/
 
 /* Nombre trabajadores quienes somos */
@@ -500,7 +469,10 @@ textarea {
       max-width: 536px; 
       background-color:#fffafa;
       text-align: center; 
+      float: right;
+      background-color: #007474;
     }
+
 /*tabla del calendario*/
     #diasc 
     {
@@ -601,6 +573,12 @@ textarea {
     }
 
 
+    /*TIENDA*/
+    .promo
+    {
+      width: 300px;
+    }
+
     /* Animacion home rotaiciones */
     .flip-box {
       background-color: transparent;
@@ -626,7 +604,7 @@ textarea {
     
     /* Position the front and back side */
     .flip-box-front, .flip-box-back {
-      position: absolute;
+      position:   absolute;
       width: 100%;
       height: 100%;
       -webkit-backface-visibility: hidden; /* Safari */
@@ -644,5 +622,96 @@ textarea {
     }
 
 
-    
+/*__________________________________________________________*/
+
+
+@media (max-width: 992px) {
+  .dropdown-menu{
+      width: 50%;
+  }
+  .dropdown-menu .dropdown-submenu{
+      width: auto;
+  }
+  .navbar-toggler-icon
+  {
+    background-image: url("../img/menu.svg");
+    width: 45px; 
+    height: 30px;
+
+  }
+  .dropdown-menu{ 
+    left: -131%;
+  }
+  .bd-placeholder-img-lg {
+    font-size: 16px;
+  }  
+  .redondeles
+  {
+    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+  }
+  .carousel img
+  {
+    width: 941px;
+    height: 500px;
+  }
+
+  .mapa
+  {
+    margin-bottom: 20px;
+  }
+
+  .list-unstyled
+  {
+    font-size: 15px;
+    float: right;
+  }
+
+  .normalContenedor
+  {
+    margin: 25px;
+  }  
+}
+
+@media (max-width: 1200px) {
   
+  .formulario
+  {
+    margin-bottom: 20px;
+    margin-left: 20%;
+    float: none;
+  }
+   #calendario
+   {
+     float: none;
+     margin-left: 20%;
+   }
+
+   .promo
+  {
+    width: 250px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+  
+  .formulario
+  {
+    margin-bottom: 20px;
+    margin-left: 10%;
+    float: none;
+  }
+   #calendario
+   {
+     float: none;
+     margin-left: 10%;
+   }
+   
+  
+}
+
