@@ -163,10 +163,12 @@ ul .dropdown-item:hover
     display: flex;
     justify-content: center;
 }
+
 .soyunboton2
 {
-    margin-top: 25px;
-    justify-content: center;
+  float: right;
+  display: flex;
+  justify-content: center;
 }
 
 /* --------------------------------- */
@@ -768,6 +770,5 @@ textarea {
     padding-left: 5px;
     padding-right: 5px;
   }
-
 }
 
