@@ -96,6 +96,11 @@ a:hover{
 
 .dropdown-item{white-space: normal}
 
+.navbar-expand-lg
+{
+  background-color: #007474;
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   font-size: 14px;
   margin-top: 1px;
@@ -173,6 +178,7 @@ ul .dropdown-item:hover
 }
 
   /* Carousel base class */
+
 .carousel {
   margin: 20px;
   margin-bottom: 2rem;
@@ -753,8 +759,15 @@ textarea {
     margin-left: 5%;
   }
 
-
-
+  .textoCuadrado
+  {
+    width: 200px;
+  }
+  p, h1, h2, h3, h4
+  {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
 }
 
