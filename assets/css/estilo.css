@@ -400,13 +400,13 @@ border-top-right-radius: 0;
 /*--------------------FORMULARIO--------------------*/
 
 form {
+  
   /* Centrar el formulario en la página */
   margin: 0 auto;
   width: 400px;
   margin-bottom: 25px;
   /* Esquema del formulario */
   padding: 1em;
-  border: 1px solid #005b5b;
   border-radius: 1em;
 }
 

@@ -13,8 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
-
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
@@ -112,8 +110,39 @@
                       <label class="label" for="#" style="font-weight: bold; color: white;">MENSAJE</label>
                       <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mensaje"></textarea>
                     </p>
+                  </div>                    
+            <div class="container">
+              <!-- Botón para abrir el modal -->
+              <button type="button" class="soyunboton boton_personalizado" data-toggle="modal" data-target="#myModal">
+                  Modal abierto
+              </button>
+              <!-- El Modal -->
+              <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                      <div class="modal-content" style="background-color: #007474;">
+                          <main>
+                          <form class="formUsuario">
+                            <img class="mb-8" src="./assets/img/tooth2.png" alt="" width="50" height="50">
+                            <h1 class="h3 mb-3 fw-normal textoBlanquito">Por favor, Registrese</h1>
+                            <label for="inputEmail" class="visually-hidden textoBlanquito">Correo electrónico</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                            <label for="inputPassword" class="visually-hidden textoBlanquito">Contraseña</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                            <div class="checkbox mb-3 textoBlanquito">
+                              <label>
+                                <input type="checkbox" value="remember-me" class="recuerdame">Recuerdame</label>
+                            </div>
+                            <a class="boton_personalizado soyunboton" href="#" role="button" style="margin-left: 25%;">¡Registro!</a>
+                            <p class="mt-5 mb-3 textoBlanquito">&copy; 2020-2021</p>   
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                          </form>
+                        </main>
+                      </div>
                   </div>
-                    <a class="boton_personalizado soyunboton" href="./usuario.html" role="button">¡Enviar mensaje!</a>
+              </div>
+</div>
+
+
                 </div> 
                 
 
