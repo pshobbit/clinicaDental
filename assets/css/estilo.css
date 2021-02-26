@@ -135,6 +135,7 @@ ul .dropdown-item:hover
 .boton_personalizado{
     text-decoration: none;
     padding: 10px;  
+    margin-left: 10%;
     margin-bottom: 15px;  
     font-weight: 600;
     font-size: 18px;
@@ -710,8 +711,50 @@ textarea {
    {
      float: none;
      margin-left: 10%;
+   } 
+}
+
+@media (max-width: 375px)
+{
+  .carousel img
+  {
+    width: 350px;
+    height: 400px;
+  }
+  .redondeles
+  {
+    margin-left: 0%;
+  }
+  .mapa
+  {
+    width: 200px;
+    height: 200px;
+    margin: 2.5%;
+  }
+
+  .formulario
+  {
+    float: none;
+    width: 250px;
+    height: 400px;
+  }
+   #calendario,  #diasc, #fechaactual, #buscafecha
+   {
+     display: none;
    }
-   
-  
+
+   .promo
+  {
+    width: 250px;
+  }
+
+  .boton_personalizado 
+  {
+    margin-left: 5%;
+  }
+
+
+
+
 }
 
