@@ -183,7 +183,10 @@ ul .dropdown-item:hover
 
 .carousel {
   margin: 20px;
+  margin-left: 8%;
+  width: 1050px;
   margin-bottom: 2rem;
+  border: 2px solid #005b5b;
 }
 
 .carousel-caption {
@@ -252,8 +255,6 @@ footer {
 {
   max-width: 700px;
 }
-
-
 
 /*ESPECIALIDADES*/
 .textoResaltado{
@@ -458,6 +459,27 @@ textarea {
   border-radius: 0 3px 3px 0;
 }
 
+.tarjetawho
+{
+  margin-bottom: 15px;
+  background-color: #007474;
+}
+
+.card-img, .card-img-bottom, .card-img-top
+{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 2px solid white;
+  border-radius: 5px;
+  
+}
+
+.card-img-bottom, .card-img-top
+{
+  background-color: black;
+}
 /* Blog posts */
 .blog-post {
   margin-bottom: 4rem;
