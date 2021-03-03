@@ -684,10 +684,11 @@ textarea {
     width: 200px;
     text-align: center;
   }
-  .carousel img
+  .carousel 
   {
-    width: 941px;
-    height: 500px;
+    width: 650px;
+    height: 515px;
+    margin-left: 8;
   }
 
   .mapa
@@ -791,6 +792,10 @@ textarea {
   {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .carousel
+  {
+    display: none;
   }
 }
 
