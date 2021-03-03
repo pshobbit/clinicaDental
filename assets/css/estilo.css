@@ -181,8 +181,8 @@ ul .dropdown-item:hover
 
   /* Carousel base class */
 
-.carousel {
-  margin: 20px;
+.carousel
+{
   margin-left: 12%;
   width: 1050px;
   margin-bottom: 2rem;
