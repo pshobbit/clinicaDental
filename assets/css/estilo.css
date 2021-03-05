@@ -726,6 +726,10 @@ textarea {
   {
     width: 250px;
   }
+  .carousel
+  {
+    margin-left: 8%;
+  }
 
 }
 
@@ -743,6 +747,10 @@ textarea {
      float: none;
      margin-left: 10%;
    } 
+   .carousel
+  {
+    margin-left: 8%;
+  }
 }
 
 @media (max-width: 375px)
